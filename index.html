@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+	.navbar {
+      background: linear-gradient(115deg, #92a332, #849531, #56642a);
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff !important;
+    }
+    .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover {
+      color: #ddd !important;
+    }
+    .dropdown-menu {
+      background-color: #f8f9fa;
+    }
+    .form-control {
+      background-color: #f8f9fa;
+      border: 1px solid #ccc;
+    }
+    .btn-outline-success {
+      color: #fff;
+      border-color: #fff;
+    }
+    .btn-outline-success:hover {
+      background-color: #fff;
+      color: #6a11cb;
+    }
+    .btn-outline-danger {
+      margin-left: 10px;
+      color: #fff;
+      border-color: #fff;
+    }
+    .text-link {
+            position: relative;
+            text-decoration: none;
+            font-size: 28px;
+            transition: color 0.3s;
+            color: black;
+            font-weight: bold;
+        }
+        .text-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #849531;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
+        }
+        .text-link:hover {
+            color: #849531;
+        }
+        .text-link:hover::after {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+	<div class="container-fluid">
+
+		<a href="" class="navbar-brand">Brand</a>
+        
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+        	<span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        	<ul class="navbar-nav">
+        		<li class="nav-item">
+        			<a href="" class="nav-link active">Overview</a>
+        		</li>
+        		<li class="nav-item dropdown">
+        			<a  class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Our Products</a>
+        			<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                         <li><a class="dropdown-item" href="#">Sweets</a></li>
+                         <li><a class="dropdown-item" href="#">Snacks</a></li>
+                         <li><a class="dropdown-item" href="#">Groceries</a></li>
+                    </ul>
+        		</li>
+        		<li class="nav-item">
+                     <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <form class="d-flex ms-auto">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-danger" type="submit">Login/Signup</button>
+            </form>          
+        </div>
+	</div>
+</nav>
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="sweet.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="snack.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="candy.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<center><a href="#" class="text-link">Delightful Discounts</a></center>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
